@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -137,5 +138,147 @@
 
     <script src="../Js/recipient.js"></script>
 </body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipient Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/recipient.css" />
+      <link rel="stylesheet" href="../Css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <div id="logo">
+
+        <a href="../index.html">
+          <p><strong>ASHA</strong></p>
+        </a>
+      </div>
+      <div class="tabs">
+        <nav>
+          <a href="../index.html"> <i class="fa-solid fa-house"></i> Home</a>
+
+          <div class="DropDown">
+            <span><a href="#donate-request"><i class="fa-solid fa-droplet"></i> D&R</a></span>
+            <div class="dropdown-content">
+              <p><a href="donerform.html">Donate Blood</a></p>
+              <p><a href="recipientform.html">Request Blood</a></p>
+            </div>
+          </div>
+          <a href="aboutus.html"> <i class="fa-solid fa-circle-info"></i> About Us </a>
+
+          <span id="authLink"></span>
+        </nav>
+      </div>
+    </div>
+  </header>
+<!-- form section -->
+    <div class="form-container">
+
+        <h2><i class=""></i>📋 Recipient Form</h2>
+        <form id="donorForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" />
+            <span class="error" id="nameError"></span>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" />
+            <span class="error" id="ageError"></span>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <span class="error" id="genderError"></span>
+
+            <label for="Location">Location:</label>
+            <select name="Location" id="Location">
+                <option value="" disabled selected>Select Location</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktpur">Bhaktpur</option>
+            </select>
+            <span class="error" id="LocationError"></span>
+
+            <label for="blood">Blood Group:</label>
+            <select name="blood" id="blood">
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <span class="error" id="bloodError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" />
+            <span class="error" id="phoneError"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- for printing matched doners -->
+  <div id="matchedDonors" class="donor-card-container"></div>
+
+
+  <!-- Footer placea -->
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="col">
+        <h2>ASHA</h2>
+        <p>Donate blood, save lives. Together we make a difference.</p>
+      </div>
+
+      <div class="col">
+        <h3>Quick Links</h3>
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="donerform.html">Donate</a></li>
+          <li><a href="recipientform.html">Request</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h3>Contact</h3>
+        <p>📧 ashahelp@gmail.com</p>
+        <p>📞 +977-98XXXXXXXX</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 ASHA Blood Donation Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <script src="../Js/recipient.js"></script>
+</body>
+
 
 </html>
