@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Css/doner.css" />
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container {
+            justify-self: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            justify-items: center;
+            align-self: center;
+            max-width: 500px;
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #d32f2f;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #e53935;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e53935;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #c62828;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+          /* Navbar */
+.navbar {
+  margin: 10px 20px;
+  padding: 0 30px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#logo p {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #7c0000;
+  user-select: none;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.tabs a {
+  color: #7c0000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-family: "Lucida Sans", sans-serif;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tabs a:hover,
+.tabs a.active {
+  background-color: red;
+  color: white;
+}
+/* DropDown of the D R */
+.DropDown {
+  padding-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+  min-width: 160px;
+  z-index: 1000;
+  font-weight: 700;
+  text-align: center;
+  transform: translateX(-25%);
+}
+.DropDown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+       <div class="navbar">
+      <div id="logo">
+
+        <a href="index.html">
+          <p><strong>ASHA</strong></p>
+        </a>
+      </div>
+      <div class="tabs">
+        <nav>
+          <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
+
+          <div class="DropDown">
+            <span><a href="#donate-request"><i class="fa-solid fa-droplet"></i> D&R</a></span>
+            <div class="dropdown-content">
+              <p><a href="Pages/donerform.html">Donate Blood</a></p>
+              <p><a href="Pages/recipientform.html">Request Blood</a></p>
+              
+            </div>
+          </div>
+          <a href="Pages/aboutus.html"> <i class="fa-solid fa-circle-info"></i> About Us </a>
+          <a href="Pages/login.html"> <i class="fa-solid fa-circle-info"></i>Log In </a>
+
+        </nav>
+      </div>
+   </div>
+    
+    
+    <!-- registration form     -->
+    <div class="form-container">
+        
+        <h2>Registration</h2>
+        <form id="donorForm" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <span class="error" id="nameError"></span>
+
+            <label for="Location">Location:</label>
+            <select name="Location" id="Location">
+                <option value="" disabled selected>Select Location</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktpur">Bhaktpur</option>
+            </select>
+            <span class="error" id="LocationError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+            <span class="error" id="emailError"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+                title="At least 8 characters, including uppercase, lowercase, number & symbol" />
+            <span class="error" id="passwordError"></span>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" />
+            <span class="error" id="confirmPasswordError"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("donorForm");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Get all input elements
+                const name = document.getElementById("name").value.trim();
+                const location = document.getElementById("Location").value;
+                const email = document.getElementById("email").value.trim();
+                const password = document.getElementById("password").value;
+                const confirmPassword = document.getElementById("confirmPassword").value;
+
+                // Get error display spans
+                const nameError = document.getElementById("nameError");
+                const locationError = document.getElementById("LocationError");
+                const emailError = document.getElementById("emailError");
+                const passwordError = document.getElementById("passwordError");
+                const confirmPasswordError = document.getElementById("confirmPasswordError");
+
+                // Clear all previous errors
+                nameError.textContent = "";
+                locationError.textContent = "";
+                emailError.textContent = "";
+                passwordError.textContent = "";
+                confirmPasswordError.textContent = "";
+
+                let isValid = true;
+
+                // Validate inputs
+                if (name === "") {
+                    nameError.textContent = "Name is required.";
+                    isValid = false;
+                }
+
+                if (location === "") {
+                    locationError.textContent = "Please select a location.";
+                    isValid = false;
+                }
+
+                const emailPattern = /^\S+@\S+\.\S+$/;
+                if (email === "") {
+                    emailError.textContent = "Email is required.";
+                    isValid = false;
+                } else if (!emailPattern.test(email)) {
+                    emailError.textContent = "Enter a valid email address.";
+                    isValid = false;
+                }
+
+                const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
+                if (password === "") {
+                    passwordError.textContent = "Password is required.";
+                    isValid = false;
+                } else if (!passwordPattern.test(password)) {
+                    passwordError.textContent =
+                        "Password must be at least 8 characters with uppercase, lowercase, number, and special symbol.";
+                    isValid = false;
+                }
+
+                if (confirmPassword === "") {
+                    confirmPasswordError.textContent = "Please confirm your password.";
+                    isValid = false;
+                } else if (password !== confirmPassword) {
+                    confirmPasswordError.textContent = "Passwords do not match.";
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    const user = {
+                        name,
+                        location,
+                        email,
+                        password
+                    };
+
+                    // Save to localStorage
+                    let users = JSON.parse(localStorage.getItem("users")) || [];
+                    users.push(user);
+                    localStorage.setItem("users", JSON.stringify(users));
+
+                    alert("Registered successfully!");
+                    window.location.href = "login.html";
+                    form.reset();
+                }
+            });
+        });
+    </script>
+  
+</body>
+
+</html>

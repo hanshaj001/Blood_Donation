@@ -1,0 +1,154 @@
+/* Reset and Base Styles */
+
+/* Form Container */
+.form-container {
+  margin-top: 100px;
+  justify-self: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  justify-items: center;
+  align-self: center;
+  max-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  color: #e60329;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+  font-weight: bold;
+  color: #333333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fdfdfd;
+}
+
+input:focus,
+select:focus {
+  border-color: #f43655;
+  outline: none;
+  box-shadow: 0 0 3px rgba(217, 4, 41, 0.4);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d90429;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a4001d;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 15px;
+  }
+}
+
+
+/* For the matchd reslut */
+
+.donor-card-container {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.donor-card {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.donor-card:hover {
+  transform: scale(1.03);
+}
+
+.donor-header {
+  background-color: crimson;
+  height: 100px;
+  position: relative;
+}
+
+.donor-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: crimson;
+  border: 3px solid white;
+}
+
+.donor-body {
+  padding: 50px 20px 20px;
+}
+
+.donor-body h3 {
+  margin: 0;
+  color: crimson;
+}
+
+.donor-body p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+

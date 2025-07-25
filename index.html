@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Blood Donation Portal</title>
+
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <div id="logo">
+
+        <a href="index.html">
+          <p><strong>ASHA</strong></p>
+        </a>
+      </div>
+      <div class="tabs">
+        <nav>
+          <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
+
+          <div class="DropDown">
+            <span><a href="#donate-request"><i class="fa-solid fa-droplet"></i> D&R</a></span>
+            <div class="dropdown-content">
+              <p><a href="Pages/donerform.html">Donate Blood</a></p>
+              <p><a href="Pages/recipientform.html">Request Blood</a></p>
+            </div>
+          </div>
+          <a href="Pages/aboutus.html"> <i class="fa-solid fa-circle-info"></i> About Us </a>
+
+          <span id="authLink"></span>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="heroo">
+    <div class="heroLeft">
+
+      <!-- heading  -->
+      <h1 class="type-container">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </h1>
+      <!-- subheading -->
+      <p class="sub-heading">When you donate blood, you become part of someone’s survival story.</p>
+      <div class="buttons">
+        <a href="Pages/donerform.html" class="button"
+          style="background-color: rgb(255, 255, 255); color: rgb(255, 0, 0);">Donate Blood</a>
+        <a href="Pages/recipientform.html" class="button hover">Request Blood</a>
+      </div>
+    </div>
+    <div class="right">
+      <img src="../images/ing.jpg" alt="Blood drop image" />
+    </div>
+  </section>
+  <!-- What types of blood groups are avaliable -->
+
+  <div class="who-candonate-whom">
+    <h1>Who can Donate Whom !</h1>
+  </div>
+
+  <div class="blood-cards">
+    <!-- O- -->
+    <div class="card">
+      <div class="blood-type">O-</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">All</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-</div>
+    </div>
+
+    <!-- O+ -->
+    <div class="card">
+      <div class="blood-type">O+</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">O+, A+, B+, AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-, O+</div>
+    </div>
+
+    <!-- A- -->
+    <div class="card">
+      <div class="blood-type">A-</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">A-, A+, AB-, AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-, A-</div>
+    </div>
+
+    <!-- A+ -->
+    <div class="card">
+      <div class="blood-type">A+</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">A+, AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-, O+, A-, A+</div>
+    </div>
+
+    <!-- B- -->
+    <div class="card">
+      <div class="blood-type">B-</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">B-, B+, AB-, AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-, B-</div>
+    </div>
+
+    <!-- B+ -->
+    <div class="card">
+      <div class="blood-type">B+</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">B+, AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-, O+, B-, B+</div>
+    </div>
+
+    <!-- AB- -->
+    <div class="card">
+      <div class="blood-type">AB-</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">AB-, AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">O-, A-, B-, AB-</div>
+    </div>
+
+    <!-- AB+ -->
+    <div class="card">
+      <div class="blood-type">AB+</div>
+      <div class="donate-label">Donate to:</div>
+      <div class="donate-value">AB+</div>
+      <div class="receive-label">Receive from:</div>
+      <div class="receive-value">All</div>
+    </div>
+  </div>
+
+  <!-- For making a little gap as  need  -->
+  <br> <br>
+  <hr style="width: 90%; margin-left : 75px">
+  <br>
+
+  <!--  Why to choose Asha -->
+  <div id="WhyAsha">
+    <div class="whyTitle">
+      <p> Why Choose VBDP?</p>
+    </div>
+
+    <div id="whyChoose">
+      <div class="whyChooseIn">
+        <i class="fa-solid fa-droplet"></i>
+        <h1>Easy Donation Process</h1>
+        <br>
+        <p>Our streamlined process makes it easy to register as a donor. Fill out a simple form with your details and
+          you're ready to help save lives.</p>
+      </div>
+      <div class="whyChooseIn">
+        <i class="fa-solid fa-location-dot"></i>
+        <h1>Location-Based Matching</h1>
+        <br>
+        <p>Our system matches donors and recipients based on location, ensuring that blood can be delivered quickly when
+          it's needed most.</p>
+      </div>
+      <div class="whyChooseIn">
+        <i class="fa-solid fa-user-group"></i>
+        <h1>Community Support</h1>
+        <br>
+        <p>Become part of a community of donors and volunteers who are committed to making a difference in people's
+          lives
+          through blood donation.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- For making a little gap as  need  -->
+  <br> <br>
+  <hr style="width: 90%; margin-left : 75px">
+  <br>
+
+  <section class="join-movement">
+    <h2>Join the ASHA Movement</h2>
+    <p>
+      ASHA is more than a platform — it's a mission to spread care, connection, and community.
+      By registering, you're not just helping someone; you're becoming a part of something bigger —
+      a movement of humanity.
+    </p>
+    <button onclick="location.href='Pages/donerform.html' ">Join Now</button>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="col">
+        <h2>ASHA</h2>
+        <p>Donate blood, save lives. Together we make a difference.</p>
+      </div>
+
+    <div class="col">
+    <h3>Quick Links</h3>
+    <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pages/donerform.html">Donate</a></li>
+        <li><a href="Pages/recipientform.html">Request</a></li>
+        <li><a href="Pages/aboutus.html">About Us</a></li>
+
+    </ul>
+</div>
+
+      <div class="col">
+        <h3>Contact</h3>
+        <p>📧ashahelp@gmail.com</p>
+        <p>📞+977-98XXXXXXXX</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 ASHA Blood Donation Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+ <script src="Js/script.js"></script>
+</body>
+
+</html>
