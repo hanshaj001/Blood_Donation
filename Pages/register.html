@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Css/doner.css" />
+    <link rel="stylesheet" href="../Css/style.css" />
+    
     <style>
         /* Reset and Base Styles */
         * {
@@ -105,74 +106,7 @@
                 font-size: 22px;
             }
         }
-          /* Navbar */
-.navbar {
-  margin: 10px 20px;
-  padding: 0 30px;
-  height: 60px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
-#logo p {
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
-  font-size: 40px;
-  font-weight: 900;
-  color: #7c0000;
-  user-select: none;
-}
-
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-.tabs a {
-  color: #7c0000;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-family: "Lucida Sans", sans-serif;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.tabs a:hover,
-.tabs a.active {
-  background-color: red;
-  color: white;
-}
-/* DropDown of the D R */
-.DropDown {
-  padding-top: 10px;
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  position: absolute;
-  display: none;
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 8px 0;
-  min-width: 160px;
-  z-index: 1000;
-  font-weight: 700;
-  text-align: center;
-  transform: translateX(-25%);
-}
-.DropDown:hover .dropdown-content {
-  display: block;
-}
 </style>
 </head>
 
@@ -180,24 +114,24 @@
        <div class="navbar">
       <div id="logo">
 
-        <a href="index.html">
+        <a href="../index.html">
           <p><strong>ASHA</strong></p>
         </a>
       </div>
       <div class="tabs">
         <nav>
-          <a href="index.html"> <i class="fa-solid fa-house"></i> Home</a>
+          <a href="../index.html"> <i class="fa-solid fa-house"></i> Home</a>
 
           <div class="DropDown">
             <span><a href="#donate-request"><i class="fa-solid fa-droplet"></i> D&R</a></span>
             <div class="dropdown-content">
-              <p><a href="Pages/donerform.html">Donate Blood</a></p>
-              <p><a href="Pages/recipientform.html">Request Blood</a></p>
+              <p><a href="donerform.html">Donate Blood</a></p>
+              <p><a href="recipientform.html">Request Blood</a></p>
               
             </div>
           </div>
-          <a href="Pages/aboutus.html"> <i class="fa-solid fa-circle-info"></i> About Us </a>
-          <a href="Pages/login.html"> <i class="fa-solid fa-circle-info"></i>Log In </a>
+          <a href="aboutus.html"> <i class="fa-solid fa-circle-info"></i> About Us </a>
+          <a href="login.html"> <i class="fa-solid fa-circle-info"></i> Log In </a>
 
         </nav>
       </div>
