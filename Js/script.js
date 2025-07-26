@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // If user is not logged in, redirect
   if (!user) {
     alert("Please log in first!");
-    window.location.href = "../Pages/login.html";
+    window.location.href = "Pages/login.html";
     return; // stop execution
   }
 
